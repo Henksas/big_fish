@@ -1,5 +1,5 @@
 html, body {
-    margin: 0;
+    margin: 0%;
 }
  /* pozycjonowanie do poprawy  napisów na obrazie */
 img 
@@ -12,7 +12,7 @@ img
     border: 1px solid red;
     top: 0%;
     z-index: -1;
-    
+    left: 0px;
 }
 
 #para1

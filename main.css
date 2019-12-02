@@ -1,0 +1,85 @@
+
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 0px;
+    background: #f1f1f1;
+  }
+  
+  /* Nazwa Bloga */
+  .header {
+    display: block;
+    padding: 50px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: unset;
+  }
+   
+    }
+  
+  /* 2 nierówne kolumny */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 25%;
+  }
+  
+  /* prawa column */
+  .rightcolumn {
+    float: left;
+    width: 100%;
+    background-color: #243a9b;
+    padding-left: 30px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: rgb(11, 121, 30);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* efekt karty artykułu */
+  .card {
+    background-color: rgb(129, 3, 3);
+    padding: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* stopka */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Elastyczny układ poniżej 800px - 2 kolumny jedna na drugiej  */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Elastyczny układ poniżej 400px pasek nawigacji pionowo */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
